@@ -12,13 +12,17 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prestart": "npm run format fix-styles",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx,json} --fix",
     "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
     "format": "prettier-eslint src/**/*.{js,jsx,json} --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format lint"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "husky": "^3.0.2",
+    "husky": "^3.0.3",
     "prettier-eslint-cli": "^5.0.0",
     "prettier-stylelint": "^0.4.2"
   }
