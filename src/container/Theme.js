@@ -8,11 +8,15 @@ function Theme() {
   return (
     <>
       <Container fluid className="root">
-        <Container className="theme">
+        <Container fluid className="theme">
           <SurrealNavbar />
           <Row className="rootRow">
-            <Col className="sidebar">1 of 2</Col>
-            <Col>2 of 2</Col>
+
+
+
+              {/*col={3}*/}
+            <Col className="sidebar mh-100"  sm={3} >.col-6 .col-sm-3</Col>
+            <Col className="content" col={6} sm>2 of 2</Col>
           </Row>
         </Container>
       </Container>

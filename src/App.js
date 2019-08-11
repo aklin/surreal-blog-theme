@@ -1,5 +1,5 @@
 import React from "react";
-import Theme from "./container/theme";
+import Theme from "./container/Theme";
 
 function App() {
   return (

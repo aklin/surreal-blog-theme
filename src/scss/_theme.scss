@@ -2,18 +2,30 @@ html,
 body {
   //margin: 0;
   //padding: 0;
-  //height: 100vh;
+
   //width: 100vw;
 }
 
 // Root Container
-.root {
+.theme  {
+  height: 100vh;
+
   nav {
   }
 
   .sidebar {
-    width: 30vw;
-    height: 100vh;
+    //max-width: 30vw;
+
     background-color: aqua;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+  }
+
+  .content {
+    background-color: antiquewhite;
+    height: 100vh;
   }
 }
