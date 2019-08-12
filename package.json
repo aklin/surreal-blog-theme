@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format lint"
+      "pre-commit": "npm run format fix-styles lint"
     }
   },
   "eslintConfig": {
