@@ -8,17 +8,17 @@
   height: 100vh;
 
   .sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+    @include vertical-align;
+    background-color: $sidebar-bg;
+    color: $sidebar-text;
+
+    .sidebar-item {
+      @include vertical-align;
+      height: 50vh;
+    }
 
     .title {
-      display: inherit;
-      flex-direction: inherit;
-      justify-content: inherit;
-      align-items: inherit;
+      @include vertical-align;
 
       h1 {
         font-family: "Noto Serif SC", serif;
@@ -38,10 +38,10 @@
 
     .search {
       .navSearch {
-        color: $dark;
-        background-color: $body-bg;
-        border-color: $gray-400;
-        border-width: 0 0 1px 0;
+        color: $sidebar-text;
+        background-color: $sidebar-bg;
+        //border-color: $gray-400;
+        //border-width: 0 0 1px 0;
         outline: 0;
 
         font-family: monospace;
@@ -49,13 +49,12 @@
         &:focus {
           box-shadow: none;
         }
+
+        &::placeholder {
+          color: gray(200);
+        }
       }
     }
-
-    /*
-        @include media-breakpoint-down(sm) {
-          display: none;
-        }*/
   }
 
   .content {
