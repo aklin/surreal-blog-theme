@@ -15,28 +15,26 @@
     background-color: aqua;
 
     .title {
-
       display: inherit;
       flex-direction: inherit;
       justify-content: inherit;
       align-items: inherit;
 
       h1 {
-        font-family: 'Noto Serif SC', serif;
+        font-family: "Noto Serif SC", serif;
         font-weight: bold;
       }
 
       h2 {
-        font-family: 'Noto Serif SC', serif;
+        font-family: "Noto Serif SC", serif;
       }
 
       h3 {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif;
         letter-spacing: 1.5px;
         font-variant-caps: all-small-caps;
         //font-family: 'Montserrat', sans-serif;
       }
-
     }
 
     .search {
