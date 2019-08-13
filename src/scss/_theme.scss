@@ -8,6 +8,7 @@
   height: 100vh;
 
   .sidebar {
+    margin-top: $sidebar-margin-top;
     @include vertical-align;
     background-color: $sidebar-bg;
     color: $sidebar-text;
@@ -59,6 +60,7 @@
 
   .content {
     background-color: $light;
+    margin-top: $content-margin-top;
     height: 100vh;
     font-family: "Montserrat", sans-serif;
   }
