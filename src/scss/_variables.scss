@@ -21,47 +21,47 @@ $grays: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $grays: map-merge(
   (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
+    '100': $gray-100,
+    '200': $gray-200,
+    '300': $gray-300,
+    '400': $gray-400,
+    '500': $gray-500,
+    '600': $gray-600,
+    '700': $gray-700,
+    '800': $gray-800,
+    '900': $gray-900,
   ),
   $grays
 );
 
-$blue: #007bff;
+$blue: #2d66d2;
 $indigo: #6610f2;
 $purple: #6f42c1;
-$pink: #e83e8c;
-$red: #dc3545;
+$pink: #d22db8;
+$red: #c14254;
 $orange: #fd7e14;
-$yellow: #ffc107;
-$green: #28a745;
-$teal: #20c997;
+$yellow: #d2992d;
+$green: #94c142;
+$teal: #42c1ae;
 $cyan: #17a2b8;
 
 $colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
-    "blue": $blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800
+    'blue': $blue,
+    'indigo': $indigo,
+    'purple': $purple,
+    'pink': $pink,
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'teal': $teal,
+    'cyan': $cyan,
+    'white': $white,
+    'gray': $gray-600,
+    'gray-dark': $gray-800,
   ),
   $colors
 );
@@ -79,28 +79,30 @@ $theme-colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
   ),
   $theme-colors
 );
 
 //$navbar-brand-height  : 76px;
-$body-bg: $light;
+$body-bg: #060e1c;
 //$font-size-base: 12rem;
 
-$sidebar-bg: $gray-600;
+$sidebar-bg: transparent;
 $sidebar-text: $gray-300;
 
-$body-margin-top: 2rem;
+$body-margin-top: 0;
 $content-margin-top: $body-margin-top;
 $sidebar-margin-top: $body-margin-top;
+$content-padding-top: 2rem;
+$sidebar-padding-top: 0;
 
 // Options
 //

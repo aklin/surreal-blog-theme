@@ -1,9 +1,9 @@
-import React from "react";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
+import React from 'react';
+import Col from 'react-bootstrap/Col';
+import { ArticleStream } from './ArticleStream';
 
-export const ContentPane = ({ ...props }) => (
-  <Col className="content">
-    <Container fluid>{props.children}</Container>
+export const ContentPane = () => (
+  <Col as='section' className='content'>
+    <ArticleStream />
   </Col>
 );
